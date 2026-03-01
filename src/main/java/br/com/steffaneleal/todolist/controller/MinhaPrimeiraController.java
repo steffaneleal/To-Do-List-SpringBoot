@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 // @Controller para criar uma estrutura onde tenha páginas/templates
 @RestController // para entregar uma API REST
-@RequestMapping("/primeiraRota")
+@RequestMapping("/primeiraRota") // Define a rota para acessar essa classe
 public class MinhaPrimeiraController {
     /**
      * Métodos de acesso do HTTP
@@ -17,7 +17,7 @@ public class MinhaPrimeiraController {
      * DELETE - Remover um dado
      * PATCH - Alterar somente uma parte do dado/informação
      */
-    @GetMapping("/")
+    @GetMapping("/primeiroMetodo") // Método de acesso do HTTP para chamar esse método
     public String primeiraMensagem() {
         return "Funcionou";
     }
